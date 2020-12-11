@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{546A8077-B346-400D-9210-0BE7E3BA1A46}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MeiPingRestaurantManagerSystem</RootNamespace>
+    <AssemblyName>MeiPingRestaurantManagerSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="microsoft.office.interop.excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\microsoft.office.interop.excel.dll</HintPath>
+    </Reference>
+    <Reference Include="CSkin, Version=16.1.14.3, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CSkin.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConvertPinYi.cs" />
+    <Compile Include="Export.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\按钮背景.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\按钮背景2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\背景.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\背景-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\宾客结账.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\宾客结账-背景.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\菜单栏-背景.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\初始化.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\登录.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\工具栏-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\工具栏-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\工具栏-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\工具栏-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\工具栏背景.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\关闭按钮.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\关于背景.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\箭头图片.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\结账按钮.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\快餐外卖.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\设置窗体背景.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\搜索会员.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\预定-0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\预定-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\预定-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\预定-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\预定-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\预定-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\预定-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\增加消费按钮.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\增加消费-背景.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\状态背景.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\灯泡 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0_gaitubao_33x31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_gaitubao_33x31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_gaitubao_33x31_gaitubao_33x31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_gaitubao_33x31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_gaitubao_33x311.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_gaitubao_33x31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4_gaitubao_33x31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5_gaitubao_33x31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
